@@ -95,7 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_comments: "Comments",
       nav_fullscreen: "Fullscreen",
       footer_copy: "© 2026 The Bug Hunter. Stored in Web directory.",
-      footer_tip: "Pro-tip: In 'Slides' mode, use Left/Right arrows or A/D keys to flip panels rapidly!"
+      footer_tip: "Pro-tip: In 'Slides' mode, use Left/Right arrows or A/D keys to flip panels rapidly!",
+      ad_label: "ADVERTISEMENT (728x90)"
     },
     vi: {
       site_title: "Huyền Thoại Fix Bug - Đêm Trắng 03:00 AM | Web Comic",
@@ -162,7 +163,8 @@ document.addEventListener('DOMContentLoaded', () => {
       nav_comments: "Bình luận",
       nav_fullscreen: "Toàn màn",
       footer_copy: "© 2026 Huyền Thoại Fix Bug. Lưu trữ tại thư mục Web.",
-      footer_tip: "Mẹo: Ở chế độ 'Từng trang', dùng phím mũi tên Trái/Phải hoặc phím A/D trên bàn phím để chuyển khung truyện nhanh!"
+      footer_tip: "Mẹo: Ở chế độ 'Từng trang', dùng phím mũi tên Trái/Phải hoặc phím A/D trên bàn phím để chuyển khung truyện nhanh!",
+      ad_label: "QUẢNG CÁO (728x90)"
     }
   };
 
