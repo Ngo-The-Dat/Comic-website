@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huyền Thoại Fix Bug - Đêm Trắng 03:00 AM | Web Comic</title>
+  <meta name="description" content="Trang web đọc truyện tranh comic online hài hước về cuộc chiến của lập trình viên với bug lúc nửa đêm.">
+  
+  <!-- Google Fonts: Bangers (Comic Title) & Outfit (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress-container">
+    <div id="reading-progress-bar"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="brand-logo">
+        <span class="brand-icon">BUG!</span>
+        <span class="brand-title">DEV COMICS</span>
+      </a>
+
+      <div class="header-actions">
+        <button id="btn-mode-scroll" class="btn-icon active" title="Chế độ cuộn dọc Webtoon">
+          📜 <span>Webtoon</span>
+        </button>
+        <button id="btn-mode-slide" class="btn-icon" title="Chế độ từng trang">
+          📖 <span>Từng trang</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Info Section -->
+  <section class="hero-section">
+    <div class="hero-card">
+      <div class="hero-content">
+        <span class="hero-badge">ONE-SHOT COMIC #01</span>
+        <h1 class="comic-title">HUYỀN THOẠI FIX BUG: ĐÊM TRẮNG 03:00 AM</h1>
+        
+        <div class="comic-meta-tags">
+          <span class="tag">#HàiHước</span>
+          <span class="tag">#LậpTrình</span>
+          <span class="tag">#KịchTính</span>
+          <span class="tag">#SciFi</span>
+          <span class="tag">#5KhungTranh</span>
+        </div>
+
+        <p class="comic-desc">
+          Câu chuyện kinh dị có thật xảy ra với mọi lập trình viên trên Trái Đất: Đúng 02:59 sáng khi chuẩn bị tắt máy đi ngủ thì Production bỗng sập không lý do... Cuộc chiến sống còn với đại quái thú bug bắt đầu!
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-val">⭐ 4.9/5</span>
+            <span class="stat-label">Đánh giá</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val">👁️ 128.4K</span>
+            <span class="stat-label">Lượt xem</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val">💬 348</span>
+            <span class="stat-label">Bình luận</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val">⏱️ 3 Phút</span>
+            <span class="stat-label">Thời lượng đọc</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide Navigation Controller (for Slide Mode) -->
+  <div class="slide-controls">
+    <button id="slide-prev-btn" class="slide-btn">◀ Khung trước</button>
+    <div id="slide-counter-display" class="slide-counter">1 / 5</div>
+    <button id="slide-next-btn" class="slide-btn">Khung tiếp ▶</button>
+  </div>
+
+  <!-- Comic Reader Area -->
+  <main id="reader-container" class="reader-wrapper reader-scroll-mode">
+
+    <!-- PANEL 1 -->
+    <article class="comic-panel-card" data-index="0">
+      <div class="panel-header">
+        <span class="panel-index">HỒI 1: CẢNH BÁO NỬA ĐÊM</span>
+        <span class="panel-time-badge">TIME: 02:59 AM</span>
+      </div>
+      <div class="panel-image-container">
+        <img src="assets/images/panel1.jpg" alt="Dev chuẩn bị đi ngủ thì Production sập" class="panel-img" loading="eager">
+        <div class="comic-sfx">CRITICAL 500!</div>
+      </div>
+      <div class="narrative-box">
+        <span class="narrative-tag">Người dẫn chuyện</span>
+        Vào một đêm mưa giông tĩnh mịch, khi cả thành phố đã chìm vào giấc ngủ sâu, anh Dev mỉm cười với hi vọng được ngủ một giấc trọn vẹn...
+      </div>
+      <div class="dialogue-container">
+        <div class="speech-bubble dev">
+          <div class="speech-speaker">Lập Trình Viên Đạt</div>
+          "Chỉ còn 1 phút nữa là đúng 3h sáng rồi... May quá xong việc, tắt máy đi ngủ thôi!"
+        </div>
+        <div class="speech-bubble dev">
+          <div class="speech-speaker">Lập Trình Viên Đạt</div>
+          "HẢ?! CÁI QUÁI GÌ ĐÂY?! 'PRODUCTION SẬP! CRITICAL 500 ERROR'?! AI ĐÃ MERGE CODE LÊN MAIN LÚC NÀY THẾ NÀY?!"
+        </div>
+      </div>
+    </article>
+
+    <!-- PANEL 2 -->
+    <article class="comic-panel-card" data-index="1">
+      <div class="panel-header">
+        <span class="panel-index">HỒI 2: QUÁI VẬT THỨC GIẤC</span>
+        <span class="panel-time-badge">TIME: 03:15 AM</span>
+      </div>
+      <div class="panel-image-container">
+        <img src="assets/images/panel2.jpg" alt="Quái vật Bug xuất hiện từ màn hình" class="panel-img" loading="lazy">
+        <div class="comic-sfx sfx-blue">GRRRRR!!</div>
+      </div>
+      <div class="narrative-box">
+        <span class="narrative-tag">Người dẫn chuyện</span>
+        Từ sâu thẳm trong các tầng code mục nát, một thực thể tà ác nghìn năm tuổi thức giấc, phá tan mọi tường lửa!
+      </div>
+      <div class="dialogue-container">
+        <div class="speech-bubble monster">
+          <div class="speech-speaker">Bug Thượng Cổ (NullPointer)</div>
+          "HAHAHA! TA CHÍNH LÀ QUÁI VẬT TỬ THẦN! TOÀN BỘ SERVER ĐÃ BỊ TA CHIẾM GIỮ! NGƯƠI ĐỪNG MONG CÓ ĐƯỢC GIẤC NGỦ ĐÊM NAY!"
+        </div>
+        <div class="speech-bubble dev">
+          <div class="speech-speaker">Lập Trình Viên Đạt</div>
+          "Vô lý! Rõ ràng dưới Localhost của mình chạy mượt mà không có một lỗi nào cơ mà?!"
+        </div>
+      </div>
+    </article>
+
+    <!-- PANEL 3 -->
+    <article class="comic-panel-card" data-index="2">
+      <div class="panel-header">
+        <span class="panel-index">HỒI 3: PHÉP THUẬT DEBUG</span>
+        <span class="panel-time-badge">TIME: 04:30 AM</span>
+      </div>
+      <div class="panel-image-container">
+        <img src="assets/images/panel3.jpg" alt="Dev triệu hồi StackOverflow và gõ phím tốc độ cao" class="panel-img" loading="lazy">
+        <div class="comic-sfx sfx-gold">CLACK TAP!!</div>
+      </div>
+      <div class="narrative-box">
+        <span class="narrative-tag">Người dẫn chuyện</span>
+        Không đầu hàng trước bóng tối, người hùng của chúng ta kích hoạt trạng thái Thượng Thừa, gõ phím với vận tốc âm thanh!
+      </div>
+      <div class="dialogue-container">
+        <div class="speech-bubble dev">
+          <div class="speech-speaker">Lập Trình Viên Đạt</div>
+          "Muốn hạ ta ư? Ngươi coi thường 100 tab StackOverflow của ta rồi đấy!"
+        </div>
+        <div class="speech-bubble dev">
+          <div class="speech-speaker">Lập Trình Viên Đạt</div>
+          "Hỡi thần chú tối thượng: <code>console.log('HERE 1'); console.log('HERE 2');</code> — HIỆN HÌNH ĐI CON BUG KIA!"
+        </div>
+      </div>
+    </article>
+
+    <!-- PANEL 4 -->
+    <article class="comic-panel-card" data-index="3">
+      <div class="panel-header">
+        <span class="panel-index">HỒI 4: CHÂN LÝ PHÁT LỘ</span>
+        <span class="panel-time-badge">TIME: 05:20 AM</span>
+      </div>
+      <div class="panel-image-container">
+        <img src="assets/images/panel4.jpg" alt="Dấu chấm phẩy định mệnh tỏa sáng" class="panel-img" loading="lazy">
+        <div class="comic-sfx">EUREKA!!</div>
+      </div>
+      <div class="narrative-box">
+        <span class="narrative-tag">Người dẫn chuyện</span>
+        Sau 2 tiếng đồng hồ truy tìm trong màn đêm tăm tối, bức màn bí mật cuối cùng cũng được vén lên bằng một ánh hào quang chói lọi!
+      </div>
+      <div class="dialogue-container">
+        <div class="speech-bubble dev">
+          <div class="speech-speaker">Lập Trình Viên Đạt</div>
+          "CÁI... CÁI GÌ THẾ NÀY?! MỘT DẤU CHẤM PHẨY <code>;</code> THIẾU Ở DÒNG 404?!"
+        </div>
+        <div class="speech-bubble dev">
+          <div class="speech-speaker">Lập Trình Viên Đạt</div>
+          "Chỉ vì thiếu đúng một cái dấu chấm phẩy bé tí tẹo mà làm sập cả cụm máy chủ triệu đô suốt 2 tiếng đồng hồ sao trời ơi?!"
+        </div>
+      </div>
+    </article>
+
+    <!-- PANEL 5 -->
+    <article class="comic-panel-card" data-index="4">
+      <div class="panel-header">
+        <span class="panel-index">HỒI 5: BÌNH MINH CHIẾN THẮNG</span>
+        <span class="panel-time-badge">TIME: 06:00 AM</span>
+      </div>
+      <div class="panel-image-container">
+        <img src="assets/images/panel5.jpg" alt="Chiến thắng bình minh uống cà phê ngắm mặt trời" class="panel-img" loading="lazy">
+        <div class="comic-sfx sfx-green">ALL GREEN!</div>
+      </div>
+      <div class="narrative-box">
+        <span class="narrative-tag">Người dẫn chuyện</span>
+        Thêm dấu chấm phẩy, commit, git push force... Toàn bộ hệ thống xanh trở lại. Ánh bình minh đầu ngày rọi chiếu qua khung cửa sổ.
+      </div>
+      <div class="dialogue-container">
+        <div class="speech-bubble dev">
+          <div class="speech-speaker">Lập Trình Viên Đạt</div>
+          "Deploy success! Mọi dịch vụ đã xanh mượt trở lại. Cà phê sáng nay ngon ngọt đến lạ lùng..."
+        </div>
+        <div class="speech-bubble dev">
+          <div class="speech-speaker">Lập Trình Viên Đạt</div>
+          "Tạm biệt nhé quái vật bug... Còn bây giờ, ta đi ngủ đây, ai gọi gì cũng mặc kệ!"
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Reader Engagement Section -->
+  <section class="engagement-section">
+    <div class="engagement-card">
+      <h2 class="engagement-title">BẠN CẢM THẤY BỘ TRUYỆN NÀY THẾ NÀO?</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem;">Hãy thả cảm xúc để ủng hộ tác giả ra tiếp Chapter 2 nhé!</p>
+      
+      <div class="reactions-grid">
+        <button class="reaction-btn" data-reaction="fire">
+          <span class="reaction-emoji">🔥</span>
+          <span>Cháy quá!</span>
+          <span id="count-fire">482</span>
+        </button>
+        <button class="reaction-btn" data-reaction="haha">
+          <span class="reaction-emoji">😂</span>
+          <span>Cười bò</span>
+          <span id="count-haha">326</span>
+        </button>
+        <button class="reaction-btn" data-reaction="shock">
+          <span class="reaction-emoji">😱</span>
+          <span>Quá đồng cảm</span>
+          <span id="count-shock">189</span>
+        </button>
+        <button class="reaction-btn" data-reaction="heart">
+          <span class="reaction-emoji">❤️</span>
+          <span>Tuyệt phẩm</span>
+          <span id="count-heart">654</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comments Section -->
+  <section id="comments-section" class="comments-section">
+    <div class="comments-header">
+      <h3>BÌNH LUẬN ĐỘC GIẢ <span id="comment-count" style="color: var(--color-primary); font-size: 1.2rem;">(3)</span></h3>
+    </div>
+
+    <!-- Input Form -->
+    <div class="comment-input-box">
+      <div class="comment-input-row">
+        <div class="input-avatar">?</div>
+        <form id="new-comment-form" class="comment-form">
+          <input type="text" id="comment-author-name" class="comment-name-input" placeholder="Tên hoặc biệt danh của bạn..." maxlength="40">
+          <textarea id="comment-text-area" class="comment-textarea" placeholder="Chia sẻ cảm nghĩ của bạn về đêm fix bug huyền thoại này..." required></textarea>
+          <button type="submit" class="comment-submit-btn">Gửi bình luận 💬</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Comment List -->
+    <div id="comments-container" class="comment-list">
+      <!-- Injected via JavaScript -->
+    </div>
+  </section>
+
+  <!-- Floating Navigation Toolbar -->
+  <nav class="floating-bar" aria-label="Thanh điều hướng nhanh">
+    <button id="btn-back-to-top" class="nav-pill-btn">
+      ⬆ <span>Lên đầu</span>
+    </button>
+    <button id="btn-jump-comments" class="nav-pill-btn">
+      💬 <span>Bình luận</span>
+    </button>
+    <button id="btn-fullscreen" class="nav-pill-btn">
+      ⛶ <span>Toàn màn</span>
+    </button>
+  </nav>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-logo">DEV COMICS &bull; WEB EDITION</div>
+    <p>&copy; 2026 Huyền Thoại Fix Bug. Lưu trữ tại thư mục Web.</p>
+    <p style="margin-top: 0.4rem; font-size: 0.8rem; color: #64748b;">Mẹo: Ở chế độ "Từng trang", dùng phím mũi tên Trái/Phải hoặc phím A/D trên bàn phím để chuyển khung truyện nhanh!</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
