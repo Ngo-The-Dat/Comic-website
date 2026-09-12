@@ -166,6 +166,40 @@ body::before {
   box-shadow: 3px 3px 0 #000;
 }
 
+/* Language Switcher */
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  background: #0f172a;
+  border: 2px solid #000;
+  border-radius: var(--radius-sm);
+  box-shadow: 3px 3px 0 #000;
+  overflow: hidden;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  padding: 0.45rem 0.65rem;
+  font-family: var(--font-comic);
+  font-size: 0.95rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+  font-weight: 700;
+}
+
+.lang-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.lang-btn.active {
+  background: var(--color-primary);
+  color: #000;
+}
+
 /* ----------------- Hero / Comic Info ----------------- */
 .hero-section {
   position: relative;
